@@ -3,7 +3,7 @@
 
 .card {
     max-width: 350px;
-    background-color: rgb(249, 127, 61);
+    background-color: rgb(201, 163, 247);
     border-radius: 25px;
     padding: 30px;
     font-family: 'Poppins', sans-serif;
@@ -19,5 +19,16 @@
     &__price {
         font-weight: 600;
         font-size: 40px;
-    }    
+    }
+
+    &__button {
+        font-weight: bold;
+        font-size: 16px;
+        text-align: center;
+        margin-top: 10px;
+        border-radius: 25px;
+        background-color: rgb(159, 45, 241);
+        color: white;
+        cursor: pointer;
+    }
 }
