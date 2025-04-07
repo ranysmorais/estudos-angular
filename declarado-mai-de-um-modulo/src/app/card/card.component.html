@@ -1,6 +1,15 @@
-
 <div class="card">
-    <div class="card__plan card__item">Plano <b>Simples</b></div>
-    <div class="card__price card__item">R$100,00/Mês</div>
+    <div class="card__plan card__item">
+        <div>
+            Plano:
+        </div>
+        <div>
+            <b class="card__tipo">{{plano.tipo}}</b>
+        </div>
+    </div>
+    <div class="card__price card__item">
+        {{plano.moeda.BRL}}{{plano.preco}}
+        {{plano.tipoCobranca.mensal}}
+    </div>
     <app-card-button></app-card-button>
 </div>

@@ -7,5 +7,10 @@ import { Component } from '@angular/core';
   styleUrl: './card.component.scss'
 })
 export class CardComponent {
-
+  plano = {
+    tipo: 'Simples',
+    preco: 1000.00,
+    moeda: { BRL: 'R$', USD: '$' },
+    tipoCobranca: { mensal: "/Mês", anual: "/Ano" },
+  };
 }
