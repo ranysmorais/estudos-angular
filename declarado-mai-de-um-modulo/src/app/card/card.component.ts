@@ -1,5 +1,22 @@
 import { Component } from '@angular/core';
 
+interface IPlano {
+  tipo: string;
+  preco: number;
+  moeda: IMoeda;
+  tipoCobranca: ITipoCobranca;
+}
+
+interface IMoeda {
+  BRL: string;
+  USD: string;
+}
+
+interface ITipoCobranca {
+  mensal: string;
+  anual: string;
+}
+
 @Component({
   selector: 'app-card',
   standalone: false,
@@ -7,7 +24,7 @@ import { Component } from '@angular/core';
   styleUrl: './card.component.scss'
 })
 export class CardComponent {
-  plano = {
+  plano: IPlano = {
     tipo: 'Simples',
     preco: 1000.00,
     moeda: { BRL: 'R$', USD: '$' },
