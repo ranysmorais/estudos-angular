@@ -32,3 +32,7 @@
         cursor: pointer;
     }
 }
+
+:host ::ng-deep .card-cancel-button {
+    background-color: rgb(236, 4, 205) !important;
+}
