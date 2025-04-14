@@ -1,7 +1,13 @@
 //DEPRECIADO
-// @import "./styles/global-overrides.scss";
+// @import "./styles/_global-overrides.scss";
 
 // NOVO METODO
-// @use "./styles/global-overrides.scss";
+@use "./styles/_global-overrides";
+
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+.global {
+    background-color: rgb(0, 255, 76);
+}

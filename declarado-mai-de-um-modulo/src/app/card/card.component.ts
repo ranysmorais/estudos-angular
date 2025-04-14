@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ViewEncapsulation } from '@angular/core';
 
 interface IPlano {
   tipo: string;
@@ -22,6 +22,7 @@ interface ITipoCobranca {
   standalone: false,
   templateUrl: './card.component.html',  
   styleUrl: './card.component.scss',
+  encapsulation: ViewEncapsulation.None,
 })
 export class CardComponent {
   plano: IPlano = {
