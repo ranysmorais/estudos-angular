@@ -20,9 +20,9 @@ interface ITipoCobranca {
 @Component({
   selector: 'app-card',
   standalone: false,
-  templateUrl: './card.component.html',  
+  templateUrl: './card.component.html',
   styleUrl: './card.component.scss',
-  encapsulation: ViewEncapsulation.None,
+  encapsulation: ViewEncapsulation.Emulated,
 })
 export class CardComponent {
   plano: IPlano = {
