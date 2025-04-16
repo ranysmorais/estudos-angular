@@ -29,7 +29,7 @@ export class CardComponent {
   plano: IPlano = {
     tipo: 'Simples',
     preco: 1000.00,
-    moeda: { BRL: 'R$', USD: '$' },
+    moeda: { BRL: 'R$', USD: '$', EUR: '€' },
     tipoCobranca: { mensal: "/Mês", anual: "/Ano" },
   };
 }
