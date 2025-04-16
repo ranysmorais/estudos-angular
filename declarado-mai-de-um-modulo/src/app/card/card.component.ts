@@ -10,6 +10,7 @@ interface IPlano {
 interface IMoeda {
   BRL: string;
   USD: string;
+  EUR: string;
 }
 
 interface ITipoCobranca {
