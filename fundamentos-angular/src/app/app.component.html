@@ -1,5 +1,10 @@
-<input class="meu-ipunt" [type]="passwordInputType" [disabled]="isDisabled" placeholder="Digite algo aqui...">
+<input 
+    class="meu-ipunt" [type]="passwordInputType"
+    [disabled]="isDisabled" 
+    (keyup)="handleInputKeyup($event)"
+    (input)="handleInputEvent($event)" />
+
 <button class="showPasswordButton" (click)="showPassword()">Mostrar</button>
-<br><br>
+<br/>
 <button class="meu-button" (click)="enableInput()">Habilitar</button>
 <button class="meu-button" (click)="disabledInput()">Desabilitar</button>

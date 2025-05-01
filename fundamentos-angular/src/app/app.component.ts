@@ -33,4 +33,15 @@ export class AppComponent {
     this.passwordInputType = inputType;
   }
 
+  handleInputKeyup(event: KeyboardEvent) {
+    const currentText = (event.target as HTMLInputElement)
+    console.log(currentText.value);
+  }
+
+  handleInputEvent(event: Event) {
+    const currentText = (event.target as HTMLInputElement)
+    console.log(currentText.value);
+
+  }
+
 }
