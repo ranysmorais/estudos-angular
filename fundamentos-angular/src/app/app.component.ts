@@ -9,14 +9,22 @@ import { RouterOutlet } from '@angular/router';
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  title = 'fundamentos-angular';  
-  buttonTitle = 'texto do botão';
-  butttonDisabled = true;
-  buttonEnabled = false;
+  title = 'fundamentos-angular';
+  widthButton1 = '110px';
+  widthButton2 = 120;
+  stylesObj = {
+    backgroundColor: 'grey',
+    width: '160px'
+  }
 
-  onButtonClick() {
-    this.buttonTitle = 'botão clicado!';
-    this.butttonDisabled = !this.butttonDisabled;
-    this.buttonEnabled = !this.buttonEnabled;
+  updateStyleObj() {
+    this.stylesObj = {
+      backgroundColor: 'lightblue',
+      width: '170px'
+    }
+  }
+
+  updateStyleWidth() {
+    this.widthButton2 = 150;
   }
 }

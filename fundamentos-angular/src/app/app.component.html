@@ -1,17 +1,17 @@
-// [attr.title] é o mesmo que [title]
-<button [attr.title]="buttonTitle">teste</button>
-<button [title]="buttonTitle">teste</button>
+<!-- SEM ANGULAR -->
+<button style="width: 100px; background-color: aqua;">BOTÃO - 0</button>
+<br><br>
 
-<br />
-
-// [disabled] é o mesmo que [attr.disabled]
-<button [attr.disabled]=" butttonDisabled ? true : null ">DISABLED</button>
-
-<br />
-
-// [disabled] é o mesmo que [attr.disabled]
-<button [disabled]=" buttonEnabled ? true : null ">ENABLED</button>
-
-<br />
-
-<button (click)="onButtonClick()">clique para alrerar props disabled</button>
+<!-- COM ANGULAR -->
+<button [style.width]="widthButton1" [style.backgroundColor]="'blue'" [style.color]="'white'">BOTÃO - 1</button>
+<br><br>
+<button [style.width.px]="widthButton2" [style.backgroundColor]="'red'" [style.color]="'white'">BOTÃO - 2</button>
+<br><br>
+<button [style]="'width: 140px; backgroundColor: green;'">BOTÃO - 3</button>
+<br><br>
+<button [style]="{width: '150px', backgroundColor: 'orange'}">BOTÃO - 4</button>
+<br><br>
+<button [style]="stylesObj">BOTÃO - 5</button>
+<br>
+<button (click)="updateStyleObj()">ATUALIZAR OBJ</button>
+<button (click)="updateStyleWidth()">ATUALIZAR WIDTH</button>
