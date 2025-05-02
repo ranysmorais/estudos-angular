@@ -1,10 +1,17 @@
-<input 
-    class="meu-ipunt" [type]="passwordInputType"
-    [disabled]="isDisabled" 
-    (keyup)="handleInputKeyup($event)"
-    (input)="handleInputEvent($event)" />
+// [attr.title] é o mesmo que [title]
+<button [attr.title]="buttonTitle">teste</button>
+<button [title]="buttonTitle">teste</button>
 
-<button class="showPasswordButton" (click)="showPassword()">Mostrar</button>
-<br/>
-<button class="meu-button" (click)="enableInput()">Habilitar</button>
-<button class="meu-button" (click)="disabledInput()">Desabilitar</button>
+<br />
+
+// [disabled] é o mesmo que [attr.disabled]
+<button [attr.disabled]=" butttonDisabled ? true : null ">DISABLED</button>
+
+<br />
+
+// [disabled] é o mesmo que [attr.disabled]
+<button [disabled]=" buttonEnabled ? true : null ">ENABLED</button>
+
+<br />
+
+<button (click)="onButtonClick()">clique para alrerar props disabled</button>

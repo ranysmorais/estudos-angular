@@ -9,39 +9,14 @@ import { RouterOutlet } from '@angular/router';
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  title = 'fundamentos-angular';
-  isDisabled = true;
-  showPaasswordInput = false;
-  passwordInputType = 'password';
-  passwordInputTypeObj = { password: 'password', text: 'text' };
+  title = 'fundamentos-angular';  
+  buttonTitle = 'texto do botão';
+  butttonDisabled = true;
+  buttonEnabled = false;
 
-
-  enableInput() {
-    this.isDisabled = false;
+  onButtonClick() {
+    this.buttonTitle = 'botão clicado!';
+    this.butttonDisabled = !this.butttonDisabled;
+    this.buttonEnabled = !this.buttonEnabled;
   }
-  disabledInput() {
-    this.isDisabled = true;
-  }
-
-  showPassword() {
-    this.showPaasswordInput = !this.showPaasswordInput;
-
-    const inputType = !this.showPaasswordInput ?
-      this.passwordInputTypeObj.password
-      : this.passwordInputTypeObj.text;
-
-    this.passwordInputType = inputType;
-  }
-
-  handleInputKeyup(event: KeyboardEvent) {
-    const currentText = (event.target as HTMLInputElement)
-    console.log(currentText.value);
-  }
-
-  handleInputEvent(event: Event) {
-    const currentText = (event.target as HTMLInputElement)
-    console.log(currentText.value);
-
-  }
-
 }
