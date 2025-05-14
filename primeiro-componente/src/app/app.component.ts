@@ -8,4 +8,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'primeiro-componente';  
+  cardPlanType = 'Simples';
+  cardPlanPrice = 29.99;
 }
